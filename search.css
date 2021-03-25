@@ -17,8 +17,8 @@ body{
     background: #bec2cc;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #035f47, #027543); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-    height:60vh;
-    width:70vw;
+    height:65vh;
+    width:90vw;
     margin:0 auto;
     top:50%;
     overflow: hidden;
@@ -52,8 +52,7 @@ body{
 }
 .search-box .input{
     border:0;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
     padding:15px;
     font-size: 12px;
     height:30px;
@@ -69,11 +68,11 @@ body{
 .search-box .btn{
     border:0;
     position: absolute;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  
+    border-radius: 5px;
     padding:5.5px;
-    font-size: 20px;
-    top:29.5px;
+    font-size: 20.5px;
+    top:29.566px;
     left:50%;
     background-color:darkcyan;
     transform: translateX(-50%);
@@ -108,7 +107,15 @@ input::placeholder{
     
 }
 img{
-    max-width:80%;
+    max-width:350px;
     margin-left:50%;
     transform: translateX(-50%);
+}
+
+@media (min-width:700px){
+    img{
+        max-width:350px;
+        margin-left:50%;
+        transform: translateX(-50%);
+    }
 }
