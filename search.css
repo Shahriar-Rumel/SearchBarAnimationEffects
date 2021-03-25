@@ -1,0 +1,114 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+.container{
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f1f503, #dfff13); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+    height:100vh;
+    width:100vw;
+}
+.box{
+    position: relative;
+    background: #bec2cc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #035f47, #027543); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    height:60vh;
+    width:70vw;
+    margin:0 auto;
+    top:50%;
+    overflow: hidden;
+    transform: translateY(-50%);
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.heading{
+
+    padding-top: 20px;
+    width:100%;
+    text-align: center;
+    font-size: 8px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:rgb(252, 193, 0);
+    font-family: "proxima-nova", sans-serif;
+   
+}
+
+.search-box{
+    padding-top:30px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    
+   
+}
+.search-box .input{
+    border:0;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding:15px;
+    font-size: 12px;
+    height:30px;
+    width:40px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    box-shadow: 
+    rgba(0, 0, 0, 0.12) 0px -12px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: none;
+}
+.search-box .btn{
+    border:0;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding:5.5px;
+    font-size: 20px;
+    top:29.5px;
+    left:50%;
+    background-color:darkcyan;
+    transform: translateX(-50%);
+    cursor:pointer;
+    transition: width 0.3s ease;
+    box-shadow: 
+    rgba(0, 0, 0, 0.12) 0px -12px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+i{
+    color: rgb(255, 253, 253);
+}
+
+.search-box .btn:focus,.search-box .input:focus{
+    outline: none;
+}
+.search-box.active .input{
+    width:200px;
+    display:block;
+}
+.search-box.active .btn{
+    transform: translateX(102px);
+}
+input::placeholder{
+    color:darkcyan;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.image{
+    margin-top: 70px;
+    
+}
+img{
+    max-width:80%;
+    margin-left:50%;
+    transform: translateX(-50%);
+}
